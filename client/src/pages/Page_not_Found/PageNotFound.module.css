@@ -1,0 +1,101 @@
+.notFound{
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/images/Login_BG.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.error404{
+    background:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: .7;
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    place-content: center;
+    place-items: center;
+}
+.text404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bold;
+  background: -webkit-linear-gradient(red, yellow);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+/* just copy this */
+}
+.sorry{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.link{
+    background-color: #1c87c9;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1300ms infinite;
+  -moz-animation: glowing 1300ms infinite;
+  -o-animation: glowing 1300ms infinite;
+  animation: glowing 1300ms infinite;
+  text-decoration: none;
+}
+@keyframes glowing {
+    0% {
+      background-color: #a89005;
+      box-shadow: 0 0 3px #32cc04;
+    }
+    50% {
+      background-color: #c2e819;
+      box-shadow: 0 2px 10px #bbe819;
+    }
+    100% {
+      background-color: #05a8a0;
+      box-shadow: 0 0px 10px #f84a05;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .error404{
+        height: 80%;
+        width: 80%;
+    } 
+    .link{
+        border-radius: 50px;
+        padding: 10px;
+    }  
+  }
+  @media screen and (max-width: 420px){
+    .sorry{
+        font-size: 15px;
+        padding: 10px;
+        font-weight: bold;
+        color: red;
+    }
+    .link{
+        font-size: 15px;
+    }
+  }

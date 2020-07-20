@@ -1,0 +1,19 @@
+### get request 
+GET http://localhost:5000/api/user
+
+###
+GET http://localhost:5000/api/attendance
+
+
+### post request
+POST http://localhost:5000/api/user
+Content-Type: application/json
+
+{
+    "name":"ramesh",
+    "password":"ramesh",
+    "isAdmin":false
+}
+
+### delete request
+DELETE http://localhost:5000/api/user/5f055e7bb3096b3580ba6e6d

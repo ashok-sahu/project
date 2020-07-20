@@ -1,0 +1,219 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/images/Login_BG.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login_bg{
+    background :url('../../assets/images/LoginBG.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    box-sizing: border-box;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    transition: all .3s;
+}
+.login_top{
+    height: 17%;
+    width: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: url('../../assets/images/Logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login_lock{
+    background: url('../../assets/images/login-lock.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+}
+.userId,.password,.button{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+    margin: 5px;
+    flex-direction: column;
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userIdField,.passwordField{
+    border: none;
+    outline: none;
+    border-style: none;
+    width: auto;
+    text-align: center;
+}
+.password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.forget{
+    color: #444444;
+  font-family: Roboto;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  width: 232px;
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    transition: all .3s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button{
+    background: url('../../assets/images/LoginButton.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form_field{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.loginText{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+    opacity: 0.800000011920929;
+}
+.login_text{
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.login_icon{
+    width: 80%;
+    height: 80%;
+}
+.text{
+    color: #fff;
+    font-size: 20px;
+    line-height: 21px;
+    width: 123px;
+    letter-spacing: .5px;
+}
+.login_body{
+    height: 83%;
+    display: inherit;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: .7;
+}
+.login_body .body_icon{
+    width: 100%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+    .login_text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login_text .login_icon, .login_text .text{
+        width: 50%;display: inherit;justify-content: center;align-items: center;
+    }
+    .login_icon1{
+        height: 40px;
+    }
+    .text{
+        color: #fff;
+        font-size: 14px;
+        line-height: 12px;
+        width: 50%;
+    }
+    .login_bg{
+        width: 70%;
+    }
+    .userId,.password,.button{
+        width: 80%;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .login_icon1{
+        height: 30px;
+    }
+    .text{
+        width: 49%;
+    }
+    .login_bg{
+        height: 80vh;
+        top: 23%;
+        margin-top: 39%;
+    }
+    .userId,.password,.button{
+        height: 40px;
+    }
+    .form{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 360px){
+    .form{
+        margin-top: 30px;
+    }
+    .login_bg{
+        margin-top: 48%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .login_bg{
+        height: 90%;
+    }
+}

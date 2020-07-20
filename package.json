@@ -1,0 +1,41 @@
+{
+  "name": "mernapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "nodemon --watch server exec babel/node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently  \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "history": "^5.0.0",
+    "mongoose": "^5.9.21",
+    "multer": "^1.4.2",
+    "perfect-scrollbar": "^1.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
